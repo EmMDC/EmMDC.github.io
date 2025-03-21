@@ -57,6 +57,15 @@ raise("Hello, Ante!");
           </code></pre>
         </article>
         <article class="code-example">
+          <h3>Functions</h3>
+          <pre><code class="language-ante">
+// how to define a function and call it
+deal f(x:):
+  return x + 10;
+raise(f(5));
+          </code></pre>
+        </article>
+        <article class="code-example">
           <h3>Conditional Card Evaluation</h3>
           <pre><code class="language-ante">
 // Check card value and print a message
@@ -75,6 +84,14 @@ else:
 hand deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"];
 for card in deck:
   raise(card);
+          </code></pre>
+        </article>
+        <article class="code-example">
+          <h3>For loop in a range</h3>
+          <pre><code class="language-ante">
+// for loop from 1 to 5 with a step of 3
+for i in turn(1, 5, 3):
+  raise(i);
 
           </code></pre>
         </article>
