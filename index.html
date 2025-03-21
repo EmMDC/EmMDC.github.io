@@ -1,1 +1,103 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ante - A Playing Card Inspired Programming Language</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img src="ante_logo.jpeg" alt="Ante Logo" id="logo" />
+        <div class="header-text">
+          <h1>Ante</h1>
+          <p>A fun programming language inspired by playing cards and poker.</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#developers">Developers</a></li>
+          <li><a href="#repo">Repository</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Ante</h2>
+        <p>
+          I recently started playing balatro, and it has become an addiction of
+          mine. I sleep, thinking about the best combinations to get the highest
+          scores possible. This has led me to combine my current obsession with
+          this assignment and the creation of Ante! Ante is a playing
+          card/poker-themed programming language designed to bring a little fun
+          to your coding. It’s a language that combines the flexibility and
+          power of Python and JavaScript with a poker-inspired syntax that’s
+          meant to be playful, yet functional thus there is a mix of standard
+          terminology and poker inspired terminology
+        </p>
+      </section>
+
+      <!-- Examples Section -->
+      <section id="examples">
+        <h2>Code Examples</h2>
+        <article class="code-example">
+          <h3>Simple Hello World</h3>
+          <pre><code class="language-ante">
+// Print a simple greeting
+raise("Hello, Ante!");
+          </code></pre>
+        </article>
+        <article class="code-example">
+          <h3>Conditional Card Evaluation</h3>
+          <pre><code class="language-ante">
+// Check card value and print a message
+hand card = {value: 10}
+if (card.value >= 10):
+  raise("High card!");
+else:
+  raise("Keep playing!");
+
+          </code></pre>
+        </article>
+        <article class="code-example">
+          <h3>Loop through a Deck</h3>
+          <pre><code class="language-ante">
+// Iterate over all cards in the deck
+hand deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"];
+for card in deck:
+  raise(card);
+
+          </code></pre>
+        </article>
+      </section>
+
+      <!-- Developers Section -->
+      <section id="developers">
+        <h2>Developer</h2>
+        <p>
+          Hi My name is Emilio Martin Del Campo. I am the solo developer behind
+          ante. I Hope you have as much fun using it as I did creating it.
+        </p>
+      </section>
+
+      <!-- Repository Section -->
+      <section id="repo">
+        <h2>Repository</h2>
+        <p>
+          Visit the
+          <a href="https://github.com/ante-lang">GitHub repository</a> for more
+          information and to contribute.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
