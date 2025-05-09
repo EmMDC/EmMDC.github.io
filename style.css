@@ -111,6 +111,41 @@ section p {
   color: var(--card-black);
 }
 
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+.repo-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 1em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--accent-color);
+  color: var(--card-black);
+  border: 2px solid var(--card-black);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background: var(--card-black);
+  color: var(--accent-color);
+}
+
 /* Code Examples Styling */
 .code-example {
   background-color: #1e1e1e;
@@ -147,39 +182,4 @@ footer {
   color: var(--card-white);
   border-top: 3px solid var(--accent-color);
   border-radius: 4px;
-}
-
-@media (max-width: 600px) {
-  .header-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-}
-
-.repo-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 1em;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: var(--accent-color);
-  color: var(--card-black);
-  border: 2px solid var(--card-black);
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.btn:hover {
-  background: var(--card-black);
-  color: var(--accent-color);
 }
